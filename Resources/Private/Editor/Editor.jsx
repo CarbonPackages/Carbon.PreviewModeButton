@@ -14,7 +14,7 @@ function MultipleToggleButtons(props) {
     const registry = props?.nodeTypesRegistry?._registry;
     const documentNodeType = props?.documentNode.nodeType;
     const config = props?.config;
-    console.log("config", config);
+
     if (!registry || !documentNodeType || !config) {
         return null;
     }
