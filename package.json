@@ -1,0 +1,17 @@
+{
+  "description": "Carbon.PreviewModeButton",
+  "license": "proprietary",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch"
+  },
+  "devDependencies": {
+    "@neos-project/neos-ui-extensibility": "~8.3.6",
+    "@neos-project/react-ui-components": "^8.3.6",
+    "esbuild": "^0.20.2",
+    "eslint": "^8.57.0",
+    "onchange": "^7.1.0",
+    "prettier": "^3.2.5"
+  }
+}

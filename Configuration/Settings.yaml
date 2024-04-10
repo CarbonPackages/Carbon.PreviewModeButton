@@ -1,0 +1,22 @@
+Neos:
+  Neos:
+    Ui:
+      resources:
+        javascript:
+          Carbon.PreviewMode:Button:
+            resource: resource://Carbon.PreviewModeButton/Public/Plugin.js
+
+      #
+      # EXAMPLE CONFIGURATION
+      #
+      # frontendConfiguration:
+      #   "Carbon.PreviewMode:Button":
+      #     # The name of the preview mode
+      #     teaserView:
+      #       # If a document is this node type or has this supertype, show the button.
+      #       # Otherwise it will be hidden
+      #       nodeTypeName: "Foo.Bar:Mixin.TeaserDocument"
+      #       # Optional. Fallback to 'fas fa-pencil'
+      #       icon: "fas fa-images"
+      #       # Add `aria-label` and `title` to the button. Will be translated, but can also be a plain text
+      #       label: "Foo.Bar:Backend.Main:editPreviewModes.teaserView"

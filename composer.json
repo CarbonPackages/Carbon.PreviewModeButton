@@ -1,0 +1,35 @@
+{
+    "name": "carbon/previewmodebutton",
+    "type": "neos-carbon",
+    "description": "Toggle preview mode with a button in the Neos CMS backend",
+    "license": "GPL-3.0",
+    "keywords": [
+        "neos",
+        "neoscms"
+    ],
+    "authors": [
+        {
+            "name": "Jon Uhlmann",
+            "email": "hello@uhlmann.pro",
+            "homepage": "https://www.uhlmann.pro",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "neos/neos-ui": "^7.3 || ^8.0"
+    },
+    "archive": {
+        "exclude": [
+            ".github",
+            ".gitattributes",
+            ".editorconfig",
+            ".gitignore",
+            "CODE_OF_CONDUCT.md"
+        ]
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Carbon.PreviewModeButton"
+        }
+    }
+}
