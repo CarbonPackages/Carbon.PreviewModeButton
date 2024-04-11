@@ -31,13 +31,12 @@ manifest("Carbon.PreviewMode:Button", {}, (globalRegistry, { frontendConfigurati
         if (settings === true) {
             settings = {
                 nodeTypeName: fallbackNodeTypeName,
-            }
+            };
         }
         if (!settings?.nodeTypeName) {
             settings.nodeTypeName = fallbackNodeTypeName;
         }
         const position = settings?.position || "start";
-        console.log("settings", viewEditModeName, settings);
         const Button = makeButton({ viewEditModeName, settings, i18nRegistry, nodeTypesRegistry });
         containerRegistry.set(`SecondaryToolbar/Right/${viewEditModeName}`, connector(Button), position);
     }
