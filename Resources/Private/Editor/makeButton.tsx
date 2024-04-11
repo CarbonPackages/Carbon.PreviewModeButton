@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { IconButton } from "@neos-project/react-ui-components";
 
 export default function makeButton({ viewEditModeName, settings, i18nRegistry, nodeTypesRegistry }) {
-    return function Button({documentNode, editPreviewMode, setEditPreviewMode }) {
+    return function Button({ documentNode, editPreviewMode, setEditPreviewMode }) {
         const [shouldRender, setShouldRender] = useState(false);
         const icon = settings?.icon || "fas fa-pencil";
         const label = settings?.label || null;

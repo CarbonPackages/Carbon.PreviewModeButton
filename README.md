@@ -38,7 +38,7 @@ Neos:
             # Add `aria-label` and `title` to the button. Will be translated, but can also be a plain text
             label: "Foo.Bar:Backend.Main:editPreviewModes.teaserView"
             # Sets the position. Defaults to 'start'
-            position: 'start 1'
+            position: "start 1"
 ```
 
 [packagist]: https://packagist.org/packages/carbon/previewmodebutton
