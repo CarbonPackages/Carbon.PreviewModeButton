@@ -5,7 +5,8 @@ import extensibilityMap from "@neos-project/neos-ui-extensibility/extensibilityM
 const options = {
     logLevel: "info",
     bundle: true,
-    minify: true,
+    minifyWhitespace: true,
+    minifySyntax: true,
     sourcemap: true,
     target: "es2020",
     format: "esm",

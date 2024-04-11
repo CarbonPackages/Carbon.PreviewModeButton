@@ -11,12 +11,17 @@ Neos:
       #
       # frontendConfiguration:
       #   "Carbon.PreviewMode:Button":
+      #     # If you set a view mode to true, it will fallback to Neos.Neos:Document and will have no custom icon or label
+      #     rawContent: true
+
       #     # The name of the preview mode
       #     teaserView:
-      #       # If a document is this node type or has this supertype, show the button.
-      #       # Otherwise it will be hidden
+      #       # If a document is this node type or has this supertype, show the button. Otherwise it will be hidden
+      #       # Defaults to 'Neos.Neos:Document'
       #       nodeTypeName: "Foo.Bar:Mixin.TeaserDocument"
-      #       # Optional. Fallback to 'fas fa-pencil'
+      #       # Set the icon. Defaults to 'fas fa-pencil'
       #       icon: "fas fa-images"
       #       # Add `aria-label` and `title` to the button. Will be translated, but can also be a plain text
       #       label: "Foo.Bar:Backend.Main:editPreviewModes.teaserView"
+      #       # Sets the position. Defaults to 'start'
+      #       position: 'start 1'
