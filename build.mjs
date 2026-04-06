@@ -1,13 +1,17 @@
 import esbuild from "esbuild";
-import extensibilityMap from "@neos-project/neos-ui-extensibility/extensibilityMap.json" assert { type: "json" };
+import extensibilityMap from "@neos-project/neos-ui-extensibility/extensibilityMap.json" with { type: "json" };
+
+const watch = process.argv.includes("--watch");
+const dev = process.argv.includes("--dev");
+const minify = !dev && !watch;
 
 /** @type {import("esbuild").BuildOptions} */
 const options = {
     logLevel: "info",
     bundle: true,
-    minifyWhitespace: true,
-    minifySyntax: true,
-    sourcemap: true,
+    minifyWhitespace: minify,
+    minifySyntax: minify,
+    sourcemap: !minify,
     target: "es2020",
     format: "esm",
     splitting: true,
@@ -22,7 +26,7 @@ const options = {
     alias: extensibilityMap,
 };
 
-if (process.argv.includes("--watch")) {
+if (watch) {
     esbuild.context(options).then((ctx) => ctx.watch());
 } else {
     esbuild.build(options);
